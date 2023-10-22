@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/curso-microservices-springcloud.iml" filepath="$PROJECT_DIR$/.idea/curso-microservices-springcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/msclientes/msclientes.iml" filepath="$PROJECT_DIR$/msclientes/msclientes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mscloudgateway/mscloudgateway.iml" filepath="$PROJECT_DIR$/mscloudgateway/mscloudgateway.iml" />
     </modules>
   </component>
 </project>
