@@ -3,6 +3,7 @@ package io.github.eduardoconceicao90.msclientes.resource;
 import io.github.eduardoconceicao90.msclientes.domain.Cliente;
 import io.github.eduardoconceicao90.msclientes.domain.dto.ClienteDTO;
 import io.github.eduardoconceicao90.msclientes.service.ClienteService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("clientes")
+@Slf4j
 public class ClienteResource {
 
     @Autowired
@@ -20,6 +22,7 @@ public class ClienteResource {
 
     @GetMapping
     public String status(){
+        log.info("Obtendo o status do microservice de clientes");
         return "OK";
     }
 
