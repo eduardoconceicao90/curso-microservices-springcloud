@@ -1,8 +1,11 @@
 package io.github.eduardoconceicao90.msavaliadorcredito.resource;
 
 import io.github.eduardoconceicao90.msavaliadorcredito.domain.SitucaoCliente;
+import io.github.eduardoconceicao90.msavaliadorcredito.exception.DadosClienteNotFoundException;
+import io.github.eduardoconceicao90.msavaliadorcredito.exception.ErroComunicacaoMicroservicesException;
 import io.github.eduardoconceicao90.msavaliadorcredito.service.AvaliadorCreditoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,8 +25,14 @@ public class AvaliadorCreditoResource {
     }
 
     @GetMapping(value = "situacao-cliente", params = "cpf")
-    public ResponseEntity<SitucaoCliente> consultaSituacaoCliente(@RequestParam("cpf") String cpf){
-        SitucaoCliente situcaoCliente = avaliadorCreditoService.obterSituacaoCliente(cpf);
-        return ResponseEntity.ok(situcaoCliente);
+    public ResponseEntity consultaSituacaoCliente(@RequestParam("cpf") String cpf){
+        try {
+            SitucaoCliente situcaoCliente = avaliadorCreditoService.obterSituacaoCliente(cpf);
+            return ResponseEntity.ok(situcaoCliente);
+        } catch (DadosClienteNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        } catch (ErroComunicacaoMicroservicesException e) {
+            return ResponseEntity.status(HttpStatus.resolve(e.getStatus())).body(e.getMessage());
+        }
     }
 }
