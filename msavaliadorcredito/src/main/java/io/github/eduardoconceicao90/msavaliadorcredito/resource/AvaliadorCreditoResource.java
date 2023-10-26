@@ -1,10 +1,9 @@
 package io.github.eduardoconceicao90.msavaliadorcredito.resource;
 
-import io.github.eduardoconceicao90.msavaliadorcredito.domain.DadosAvaliacao;
-import io.github.eduardoconceicao90.msavaliadorcredito.domain.RetornoAvaliacaoCliente;
-import io.github.eduardoconceicao90.msavaliadorcredito.domain.SitucaoCliente;
+import io.github.eduardoconceicao90.msavaliadorcredito.domain.*;
 import io.github.eduardoconceicao90.msavaliadorcredito.exception.DadosClienteNotFoundException;
 import io.github.eduardoconceicao90.msavaliadorcredito.exception.ErroComunicacaoMicroservicesException;
+import io.github.eduardoconceicao90.msavaliadorcredito.exception.ErroSolicitacaoCartaoException;
 import io.github.eduardoconceicao90.msavaliadorcredito.service.AvaliadorCreditoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,7 +23,7 @@ public class AvaliadorCreditoResource {
     }
 
     @GetMapping(value = "situacao-cliente", params = "cpf")
-    public ResponseEntity consultaSituacaoCliente(@RequestParam("cpf") String cpf){
+    public ResponseEntity consultarSituacaoCliente(@RequestParam("cpf") String cpf){
         try {
             SitucaoCliente situcaoCliente = avaliadorCreditoService.obterSituacaoCliente(cpf);
             return ResponseEntity.ok(situcaoCliente);
@@ -45,6 +44,17 @@ public class AvaliadorCreditoResource {
             return ResponseEntity.notFound().build();
         } catch (ErroComunicacaoMicroservicesException e) {
             return ResponseEntity.status(HttpStatus.resolve(e.getStatus())).body(e.getMessage());
+        }
+    }
+
+    @PostMapping("solicitacoes-cartao")
+    public ResponseEntity solicitarCartao(@RequestBody DadosSolicitacaoEmissaoCartao dados){
+        try{
+            ProtocoloSolicitacaoCartao protocoloSolicitacaoCartao = avaliadorCreditoService
+                    .solicitarEmissaoCartao(dados);
+            return ResponseEntity.ok(protocoloSolicitacaoCartao);
+        }catch (ErroSolicitacaoCartaoException e){
+            return ResponseEntity.internalServerError().body(e.getMessage());
         }
     }
 }

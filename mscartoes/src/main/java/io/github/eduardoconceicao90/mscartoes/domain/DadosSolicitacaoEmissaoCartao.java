@@ -1,4 +1,4 @@
-package io.github.eduardoconceicao90.msavaliadorcredito.domain;
+package io.github.eduardoconceicao90.mscartoes.domain;
 
 import lombok.Data;
 

@@ -4,8 +4,10 @@ import feign.FeignException;
 import io.github.eduardoconceicao90.msavaliadorcredito.domain.*;
 import io.github.eduardoconceicao90.msavaliadorcredito.exception.DadosClienteNotFoundException;
 import io.github.eduardoconceicao90.msavaliadorcredito.exception.ErroComunicacaoMicroservicesException;
+import io.github.eduardoconceicao90.msavaliadorcredito.exception.ErroSolicitacaoCartaoException;
 import io.github.eduardoconceicao90.msavaliadorcredito.infra.clients.CartoesResourceClient;
 import io.github.eduardoconceicao90.msavaliadorcredito.infra.clients.ClientesResourceClient;
+import io.github.eduardoconceicao90.msavaliadorcredito.infra.mqueue.SolicitacaoEmissaoCartaoPublisher;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -25,6 +28,9 @@ public class AvaliadorCreditoService {
 
     @Autowired
     private CartoesResourceClient cartoesClient;
+
+    @Autowired
+    private SolicitacaoEmissaoCartaoPublisher emissaoCartaoPublisher;
 
     public SitucaoCliente obterSituacaoCliente(String cpf) throws DadosClienteNotFoundException, ErroComunicacaoMicroservicesException {
 
@@ -78,6 +84,16 @@ public class AvaliadorCreditoService {
                 throw new DadosClienteNotFoundException();
             }
             throw new ErroComunicacaoMicroservicesException(e.getMessage(), status);
+        }
+    }
+
+    public ProtocoloSolicitacaoCartao solicitarEmissaoCartao(DadosSolicitacaoEmissaoCartao dados){
+        try{
+            emissaoCartaoPublisher.solicitarCartao(dados);
+            var protocolo = UUID.randomUUID().toString();
+            return new ProtocoloSolicitacaoCartao(protocolo);
+        }catch (Exception e){
+            throw new ErroSolicitacaoCartaoException(e.getMessage());
         }
     }
 }
