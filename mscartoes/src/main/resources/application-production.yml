@@ -1,6 +1,11 @@
 spring:
   application:
-    name: msclientes
+    name: mscartoes
+  rabbitmq:
+    host: ${RABBITMQ_SERVER}
+    port: 5672
+    username: guest
+    password: guest
 
 server:
   port: 0
@@ -8,9 +13,13 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://cursoms-eureka-user:rraeomcsreueusk--us@localhost:8761/eureka
+      defaultZone: http://cursoms-eureka-user:rraeomcsreueusk--us@${EUREKA_SERVER}:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+mq:
+  queues:
+    emissao-cartoes: emissao-cartoes
 
 management:
   endpoints:
@@ -21,4 +30,3 @@ management:
 logging:
   file:
     name: ./logs/log-file.log
-
