@@ -5,104 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763807a3-8b0f-4c37-b12c-3ea17c893831" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/src/main/java/io/github/microservices/eurekaserver/EurekaserverApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/src/main/java/io/github/microservices/eurekaserver/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eurekaserver/src/test/java/io/github/microservices/eurekaserver/EurekaserverApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/MsavaliadorcreditoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/config/MQConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/domain/Cartao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/domain/CartaoAprovado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/domain/CartaoCliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/domain/DadosAvaliacao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/domain/DadosCliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/domain/DadosSolicitacaoEmissaoCartao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/domain/ProtocoloSolicitacaoCartao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/domain/RetornoAvaliacaoCliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/domain/SitucaoCliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/exception/DadosClienteNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/exception/ErroComunicacaoMicroservicesException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/exception/ErroSolicitacaoCartaoException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/infra/clients/CartoesResourceClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/infra/clients/ClientesResourceClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/infra/mqueue/SolicitacaoEmissaoCartaoPublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/resource/AvaliadorCreditoResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/service/AvaliadorCreditoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/resources/application-production.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msavaliadorcredito/src/test/java/io/github/eduardoconceicao90/msavaliadorcredito/MsavaliadorcreditoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/MscartoesApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/domain/Cartao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/domain/ClienteCartao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/domain/DadosSolicitacaoEmissaoCartao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/domain/dto/CartaoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/domain/dto/CartoesPorClienteResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/domain/enums/BandeiraCartao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/infra/mqueue/EmissaoCartaoSubscriber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/repository/CartaoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/repository/ClienteCartaoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/resource/CartaoResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/service/CartaoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/service/ClienteCartaoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/resources/application-production.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscartoes/src/test/java/io/github/eduardoconceicao90/mscartoes/MscartoesApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/src/main/java/io/github/eduardoconceicao90/msclientes/MsclientesApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/src/main/java/io/github/eduardoconceicao90/msclientes/domain/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/src/main/java/io/github/eduardoconceicao90/msclientes/domain/dto/ClienteDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/src/main/java/io/github/eduardoconceicao90/msclientes/repository/ClienteRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/src/main/java/io/github/eduardoconceicao90/msclientes/resource/ClienteResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/src/main/java/io/github/eduardoconceicao90/msclientes/service/ClienteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/src/main/resources/application-production.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msclientes/src/test/java/io/github/eduardoconceicao90/msclientes/MsclientesApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/src/main/java/io/github/eduardoconceicao90/mscloudgateway/MscloudgatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/src/main/resources/application-production.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mscloudgateway/src/test/java/io/github/eduardoconceicao90/mscloudgateway/MscloudgatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msavaliadorcredito/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msavaliadorcredito/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mscartoes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msclientes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msclientes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscloudgateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mscloudgateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
