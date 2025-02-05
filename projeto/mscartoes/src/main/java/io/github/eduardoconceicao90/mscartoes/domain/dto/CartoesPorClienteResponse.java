@@ -10,14 +10,14 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CartoesPorClienteResponseDTO {
+public class CartoesPorClienteResponse {
 
     private String nome;
     private String bandeira;
     private BigDecimal limiteLiberado;
 
-    public static CartoesPorClienteResponseDTO fromModel(ClienteCartao model){
-        return new CartoesPorClienteResponseDTO(
+    public static CartoesPorClienteResponse fromModel(ClienteCartao model){
+        return new CartoesPorClienteResponse(
                 model.getCartao().getNome(),
                 model.getCartao().getBandeira().toString(),
                 model.getLimite()

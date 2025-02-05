@@ -8,8 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Data
 @NoArgsConstructor
+@Data
 @Entity
 public class Cliente {
 

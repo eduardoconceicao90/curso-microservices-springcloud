@@ -11,4 +11,5 @@ public class ErroComunicacaoMicroservicesException extends Exception{
         super(message);
         this.status = status;
     }
+
 }

@@ -23,17 +23,11 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class AvaliadorCreditoService {
 
-    @Autowired
-    private ClientesResourceClient clientesClient;
-
-    @Autowired
-    private CartoesResourceClient cartoesClient;
-
-    @Autowired
-    private SolicitacaoEmissaoCartaoPublisher emissaoCartaoPublisher;
+    private final ClientesResourceClient clientesClient;
+    private final CartoesResourceClient cartoesClient;
+    private final SolicitacaoEmissaoCartaoPublisher emissaoCartaoPublisher;
 
     public SitucaoCliente obterSituacaoCliente(String cpf) throws DadosClienteNotFoundException, ErroComunicacaoMicroservicesException {
-
         try {
             ResponseEntity<DadosCliente> dadosClienteResponse = clientesClient.dadosCliente(cpf);
             ResponseEntity<List<CartaoCliente>> cartoesResponse = cartoesClient.getCartoesByCliente(cpf);
@@ -44,9 +38,9 @@ public class AvaliadorCreditoService {
                     .cartoes(cartoesResponse.getBody())
                     .build();
 
-        }catch (FeignException.FeignClientException e){
+        } catch (FeignException.FeignClientException e) {
             int status = e.status();
-            if(HttpStatus.NOT_FOUND.value() == status){
+            if (HttpStatus.NOT_FOUND.value() == status) {
                 throw new DadosClienteNotFoundException();
             }
             throw new ErroComunicacaoMicroservicesException(e.getMessage(), status);
@@ -78,9 +72,9 @@ public class AvaliadorCreditoService {
 
             return new RetornoAvaliacaoCliente(listaCartoesAprovados);
 
-        }catch (FeignException.FeignClientException e){
+        } catch (FeignException.FeignClientException e) {
             int status = e.status();
-            if(HttpStatus.NOT_FOUND.value() == status){
+            if (HttpStatus.NOT_FOUND.value() == status) {
                 throw new DadosClienteNotFoundException();
             }
             throw new ErroComunicacaoMicroservicesException(e.getMessage(), status);
@@ -88,11 +82,11 @@ public class AvaliadorCreditoService {
     }
 
     public ProtocoloSolicitacaoCartao solicitarEmissaoCartao(DadosSolicitacaoEmissaoCartao dados){
-        try{
+        try {
             emissaoCartaoPublisher.solicitarCartao(dados);
             var protocolo = UUID.randomUUID().toString();
             return new ProtocoloSolicitacaoCartao(protocolo);
-        }catch (Exception e){
+        } catch (Exception e) {
             throw new ErroSolicitacaoCartaoException(e.getMessage());
         }
     }

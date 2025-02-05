@@ -4,7 +4,7 @@ import io.github.eduardoconceicao90.msclientes.domain.Cliente;
 import lombok.Data;
 
 @Data
-public class ClienteDTO {
+public class ClienteSaveRequest {
 
     private String cpf;
     private String nome;
@@ -13,4 +13,5 @@ public class ClienteDTO {
     public Cliente toModel(){
         return new Cliente(cpf, nome, idade);
     }
+
 }

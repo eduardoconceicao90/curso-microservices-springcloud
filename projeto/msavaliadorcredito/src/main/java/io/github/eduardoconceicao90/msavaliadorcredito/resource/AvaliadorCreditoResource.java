@@ -5,17 +5,17 @@ import io.github.eduardoconceicao90.msavaliadorcredito.exception.DadosClienteNot
 import io.github.eduardoconceicao90.msavaliadorcredito.exception.ErroComunicacaoMicroservicesException;
 import io.github.eduardoconceicao90.msavaliadorcredito.exception.ErroSolicitacaoCartaoException;
 import io.github.eduardoconceicao90.msavaliadorcredito.service.AvaliadorCreditoService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("avaliacoes-credito")
+@RequiredArgsConstructor
 public class AvaliadorCreditoResource {
 
-    @Autowired
-    private AvaliadorCreditoService avaliadorCreditoService;
+    private final AvaliadorCreditoService avaliadorCreditoService;
 
     @GetMapping
     public String status(){
@@ -37,8 +37,7 @@ public class AvaliadorCreditoResource {
     @PostMapping
     public ResponseEntity realizarAvaliacao(@RequestBody DadosAvaliacao dados){
         try {
-            RetornoAvaliacaoCliente retornoAvaliacaoCliente = avaliadorCreditoService
-                    .realizarAvaliacao(dados.getCpf(), dados.getRenda());
+            RetornoAvaliacaoCliente retornoAvaliacaoCliente = avaliadorCreditoService.realizarAvaliacao(dados.getCpf(), dados.getRenda());
             return ResponseEntity.ok(retornoAvaliacaoCliente);
         } catch (DadosClienteNotFoundException e) {
             return ResponseEntity.notFound().build();
@@ -49,11 +48,10 @@ public class AvaliadorCreditoResource {
 
     @PostMapping("solicitacoes-cartao")
     public ResponseEntity solicitarCartao(@RequestBody DadosSolicitacaoEmissaoCartao dados){
-        try{
-            ProtocoloSolicitacaoCartao protocoloSolicitacaoCartao = avaliadorCreditoService
-                    .solicitarEmissaoCartao(dados);
+        try {
+            ProtocoloSolicitacaoCartao protocoloSolicitacaoCartao = avaliadorCreditoService.solicitarEmissaoCartao(dados);
             return ResponseEntity.ok(protocoloSolicitacaoCartao);
-        }catch (ErroSolicitacaoCartaoException e){
+        } catch (ErroSolicitacaoCartaoException e) {
             return ResponseEntity.internalServerError().body(e.getMessage());
         }
     }

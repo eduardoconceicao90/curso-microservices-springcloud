@@ -7,7 +7,7 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 @Data
-public class CartaoDTO {
+public class CartaoSaveRequest {
 
     private String nome;
     private BandeiraCartao bandeira;
@@ -15,6 +15,6 @@ public class CartaoDTO {
     private BigDecimal limite;
 
     public Cartao toModel(){
-        return new Cartao(nome, bandeira, renda, limite );
+        return new Cartao(nome, bandeira, renda, limite);
     }
 }

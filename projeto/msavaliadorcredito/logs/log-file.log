@@ -1,11 +1,38 @@
-2023-11-11 22:06:07.375  INFO 12168 --- [main] g.e.m.MsavaliadorcreditoApplicationTests : Starting MsavaliadorcreditoApplicationTests using Java 17.0.6 on LAPTOP-O848NQAN with PID 12168 (started by eduardo in C:\Users\eduar\Desktop\Eduardo\projetos back-end\curso-microservices-springcloud\projeto\msavaliadorcredito)
-2023-11-11 22:06:07.380  INFO 12168 --- [main] g.e.m.MsavaliadorcreditoApplicationTests : No active profile set, falling back to 1 default profile: "default"
-2023-11-11 22:06:11.726  INFO 12168 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=94b82354-cde1-3558-81bc-9cf20630318e
-2023-11-11 22:06:15.220  INFO 12168 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'msclientes' URL not provided. Will try picking an instance via load-balancing.
-2023-11-11 22:06:15.475  INFO 12168 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'mscartoes' URL not provided. Will try picking an instance via load-balancing.
-2023-11-11 22:06:23.924  INFO 12168 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-11-11 22:06:24.181  WARN 12168 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-11-11 22:06:24.230  INFO 12168 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
-2023-11-11 22:06:24.449  INFO 12168 --- [main] g.e.m.MsavaliadorcreditoApplicationTests : Started MsavaliadorcreditoApplicationTests in 19.359 seconds (JVM running for 22.571)
-2023-11-11 22:06:26.265  INFO 12168 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2023-11-11 22:06:26.270  INFO 12168 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSAVALIADORCREDITO with eureka with status DOWN
+2025-02-05 11:54:08.112  INFO 9896 --- [main] i.g.e.m.MsavaliadorcreditoApplication    : Starting MsavaliadorcreditoApplication using Java 17.0.6 on SBES3T10429 with PID 9896 (C:\Users\eduardo.conceicao\Desktop\curso-microservices-springcloud\projeto\msavaliadorcredito\target\classes started by eduardo.conceicao in C:\Users\eduardo.conceicao\Desktop\curso-microservices-springcloud\projeto\msavaliadorcredito)
+2025-02-05 11:54:08.119  INFO 9896 --- [main] i.g.e.m.MsavaliadorcreditoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-05 11:54:09.105  INFO 9896 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e96b2432-fdb3-35c5-b16c-510e0783913b
+2025-02-05 11:54:09.485  INFO 9896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2025-02-05 11:54:09.652  INFO 9896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1470 ms
+2025-02-05 11:54:10.140  INFO 9896 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'msclientes' URL not provided. Will try picking an instance via load-balancing.
+2025-02-05 11:54:10.202  INFO 9896 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'mscartoes' URL not provided. Will try picking an instance via load-balancing.
+2025-02-05 11:54:11.423  INFO 9896 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-05 11:54:11.629  WARN 9896 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-05 11:54:11.668  INFO 9896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 21861 (http) with context path ''
+2025-02-05 11:54:11.669  INFO 9896 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 21861
+2025-02-05 11:54:11.674  INFO 9896 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-05 11:54:11.773  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-05 11:54:11.781  INFO 9896 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-05 11:54:11.807  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-05 11:54:11.807  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-05 11:54:11.807  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-05 11:54:11.807  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-05 11:54:11.807  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-05 11:54:11.807  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-05 11:54:11.807  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-05 11:54:12.073  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-05 11:54:12.075  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-05 11:54:12.077  INFO 9896 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-05 11:54:12.081  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738767252080 with initial instances count: 1
+2025-02-05 11:54:12.083  INFO 9896 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSAVALIADORCREDITO with eureka with status UP
+2025-02-05 11:54:12.083  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738767252083, current=UP, previous=STARTING]
+2025-02-05 11:54:12.084  INFO 9896 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSAVALIADORCREDITO/msavaliadorcredito:c60e4164a7baa9a0f5e6e8a33f9d7d01: registering service...
+2025-02-05 11:54:12.127  INFO 9896 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSAVALIADORCREDITO/msavaliadorcredito:c60e4164a7baa9a0f5e6e8a33f9d7d01 - registration status: 204
+2025-02-05 11:54:12.226  INFO 9896 --- [main] i.g.e.m.MsavaliadorcreditoApplication    : Started MsavaliadorcreditoApplication in 4.784 seconds (JVM running for 5.51)
+2025-02-05 11:54:12.227  INFO 9896 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSAVALIADORCREDITO with eureka with status DOWN
+2025-02-05 11:54:12.227  INFO 9896 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738767252227, current=DOWN, previous=UP]
+2025-02-05 11:54:12.227  INFO 9896 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSAVALIADORCREDITO/msavaliadorcredito:c60e4164a7baa9a0f5e6e8a33f9d7d01: registering service...
+2025-02-05 11:54:12.231  INFO 9896 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSAVALIADORCREDITO/msavaliadorcredito:c60e4164a7baa9a0f5e6e8a33f9d7d01 - registration status: 204
+2025-02-05 11:54:12.255  INFO 9896 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-05 11:54:15.271  INFO 9896 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-05 11:54:15.278  INFO 9896 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSAVALIADORCREDITO/msavaliadorcredito:c60e4164a7baa9a0f5e6e8a33f9d7d01 - deregister  status: 200
+2025-02-05 11:54:15.282  INFO 9896 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

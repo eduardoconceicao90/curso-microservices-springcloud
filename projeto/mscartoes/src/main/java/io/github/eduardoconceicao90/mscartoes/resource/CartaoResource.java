@@ -1,13 +1,12 @@
 package io.github.eduardoconceicao90.mscartoes.resource;
 
-import com.netflix.discovery.converters.Auto;
 import io.github.eduardoconceicao90.mscartoes.domain.Cartao;
 import io.github.eduardoconceicao90.mscartoes.domain.ClienteCartao;
-import io.github.eduardoconceicao90.mscartoes.domain.dto.CartaoDTO;
-import io.github.eduardoconceicao90.mscartoes.domain.dto.CartoesPorClienteResponseDTO;
+import io.github.eduardoconceicao90.mscartoes.domain.dto.CartaoSaveRequest;
+import io.github.eduardoconceicao90.mscartoes.domain.dto.CartoesPorClienteResponse;
 import io.github.eduardoconceicao90.mscartoes.service.CartaoService;
 import io.github.eduardoconceicao90.mscartoes.service.ClienteCartaoService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,13 +16,11 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("cartoes")
+@RequiredArgsConstructor
 public class CartaoResource {
 
-    @Autowired
-    private CartaoService cartaoService;
-
-    @Autowired
-    private ClienteCartaoService clienteCartaoService;
+    private final CartaoService cartaoService;
+    private final ClienteCartaoService clienteCartaoService;
 
     @GetMapping
     public String status(){
@@ -31,9 +28,9 @@ public class CartaoResource {
     }
 
     @PostMapping
-    public ResponseEntity save(@RequestBody CartaoDTO cartao){
-        Cartao newObj = cartao.toModel();
-        cartaoService.save(newObj);
+    public ResponseEntity save(@RequestBody CartaoSaveRequest request){
+        var cartao = request.toModel();
+        cartaoService.save(cartao);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
@@ -44,12 +41,11 @@ public class CartaoResource {
     }
 
     @GetMapping(params = "cpf")
-    public ResponseEntity<List<CartoesPorClienteResponseDTO>> getCartoesByCliente(
-            @RequestParam("cpf") String cpf){
-        List<ClienteCartao> lista = clienteCartaoService.listCartoesByCpf(cpf);
-        List<CartoesPorClienteResponseDTO> resultList = lista.stream()
-                .map(CartoesPorClienteResponseDTO::fromModel)
-                .collect(Collectors.toList());
+    public ResponseEntity<List<CartoesPorClienteResponse>> getCartoesByCliente(@RequestParam("cpf") String cpf){
+        List<ClienteCartao> list = clienteCartaoService.listCartoesByCpf(cpf);
+        List<CartoesPorClienteResponse> resultList = list.stream()
+                                                            .map(CartoesPorClienteResponse::fromModel)
+                                                            .collect(Collectors.toList());
         return ResponseEntity.ok(resultList);
     }
 }
