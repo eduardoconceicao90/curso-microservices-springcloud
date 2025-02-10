@@ -6,21 +6,19 @@ import io.github.eduardoconceicao90.mscartoes.domain.ClienteCartao;
 import io.github.eduardoconceicao90.mscartoes.domain.DadosSolicitacaoEmissaoCartao;
 import io.github.eduardoconceicao90.mscartoes.repository.CartaoRepository;
 import io.github.eduardoconceicao90.mscartoes.repository.ClienteCartaoRepository;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
+@RequiredArgsConstructor
 @Component
 @Slf4j
 public class EmissaoCartaoSubscriber {
 
-    @Autowired
-    private CartaoRepository cartaoRepository;
-
-    @Autowired
-    private ClienteCartaoRepository clienteCartaoRepository;
+    private final CartaoRepository cartaoRepository;
+    private final ClienteCartaoRepository clienteCartaoRepository;
 
     @RabbitListener(queues = "${mq.queues.emissao-cartoes}")
     public void receberSolicitacaoEmissao(@Payload String payload) {
