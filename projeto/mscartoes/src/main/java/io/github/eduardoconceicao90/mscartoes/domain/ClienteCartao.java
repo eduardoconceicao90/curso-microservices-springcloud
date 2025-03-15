@@ -3,7 +3,7 @@ package io.github.eduardoconceicao90.mscartoes.domain;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 
 @Entity

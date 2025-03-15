@@ -5,12 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763807a3-8b0f-4c37-b12c-3ea17c893831" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/java/io/github/microservices/eurekaserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/java/io/github/microservices/eurekaserver/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msavaliadorcredito/logs/log-file.log" beforeDir="false" afterPath="$PROJECT_DIR$/msavaliadorcredito/logs/log-file.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msavaliadorcredito/logs/log-file.log.2025-02-04.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msavaliadorcredito/logs/log-file.log.2025-02-05.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msavaliadorcredito/logs/log-file.log.2025-02-07.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msavaliadorcredito/logs/log-file.log.2025-02-08.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msavaliadorcredito/logs/log-file.log.2025-02-09.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/msavaliadorcredito/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msavaliadorcredito/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/MsavaliadorcreditoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/MsavaliadorcreditoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/infra/mqueue/SolicitacaoEmissaoCartaoPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/msavaliadorcredito/src/main/java/io/github/eduardoconceicao90/msavaliadorcredito/infra/mqueue/SolicitacaoEmissaoCartaoPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/logs/log-file.log" beforeDir="false" afterPath="$PROJECT_DIR$/mscartoes/logs/log-file.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/logs/log-file.log.2025-02-04.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/logs/log-file.log.2025-02-06.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/logs/log-file.log.2025-02-07.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/logs/log-file.log.2025-02-08.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/logs/log-file.log.2025-02-08.1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/logs/log-file.log.2025-02-09.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/logs/log-file.log.2025-02-09.1.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mscartoes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mscartoes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/MscartoesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/MscartoesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/domain/Cartao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/domain/Cartao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/domain/ClienteCartao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mscartoes/src/main/java/io/github/eduardoconceicao90/mscartoes/domain/ClienteCartao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msclientes/logs/log-file.log" beforeDir="false" afterPath="$PROJECT_DIR$/msclientes/logs/log-file.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msclientes/logs/log-file.log.2025-02-04.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msclientes/logs/log-file.log.2025-02-07.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msclientes/logs/log-file.log.2025-02-08.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msclientes/logs/log-file.log.2025-02-09.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/msclientes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msclientes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msclientes/src/main/java/io/github/eduardoconceicao90/msclientes/MsclientesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msclientes/src/main/java/io/github/eduardoconceicao90/msclientes/MsclientesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msclientes/src/main/java/io/github/eduardoconceicao90/msclientes/domain/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/msclientes/src/main/java/io/github/eduardoconceicao90/msclientes/domain/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mscloudgateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mscloudgateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mscloudgateway/src/main/java/io/github/eduardoconceicao90/mscloudgateway/MscloudgatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mscloudgateway/src/main/java/io/github/eduardoconceicao90/mscloudgateway/MscloudgatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,16 +50,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/eurekaserver/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/msavaliadorcredito/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/mscartoes/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/msclientes/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/mscloudgateway/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2Y3LzGkMNpsl8fatCWUirW9Tw0c" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,11 +74,100 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.EurekaserverApplication.executor": "Run",
+    "Application.MsavaliadorcreditoApplication.executor": "Run",
+    "Application.MscartoesApplication.executor": "Run",
+    "Application.MsclientesApplication.executor": "Run",
+    "Application.MscloudgatewayApplication.executor": "Run",
+    "Maven.projeto [clean,install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/eduardo.conceicao/Desktop/curso-microservices-springcloud/projeto",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.32068965"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.MscloudgatewayApplication">
+    <configuration name="EurekaserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.microservices.eurekaserver.EurekaserverApplication" />
+      <module name="eurekaserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.microservices.eurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsavaliadorcreditoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.eduardoconceicao90.msavaliadorcredito.MsavaliadorcreditoApplication" />
+      <module name="msavaliadorcredito" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.eduardoconceicao90.msavaliadorcredito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MscartoesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.eduardoconceicao90.mscartoes.MscartoesApplication" />
+      <module name="mscartoes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.eduardoconceicao90.mscartoes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsclientesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.eduardoconceicao90.msclientes.MsclientesApplication" />
+      <module name="msclientes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.eduardoconceicao90.msclientes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MscloudgatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.eduardoconceicao90.mscloudgateway.MscloudgatewayApplication" />
+      <module name="mscloudgateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.eduardoconceicao90.mscloudgateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MscloudgatewayApplication" />
+        <item itemvalue="Application.MsclientesApplication" />
+        <item itemvalue="Application.MscartoesApplication" />
+        <item itemvalue="Application.MsavaliadorcreditoApplication" />
+        <item itemvalue="Application.EurekaserverApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -4,7 +4,7 @@ import io.github.eduardoconceicao90.mscartoes.domain.enums.BandeiraCartao;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
