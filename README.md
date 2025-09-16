@@ -8,7 +8,7 @@ Abordagens:
 - Api Gateway
 - Balanceamento de Carga
 - Desenvolvimento de Microservices
-- Comunicação Sícrona e Assícrona de Microservices
+- Comunicação Síncrona e Assícrona de Microservices
 - Serviço/Fila de Mensageria com RabbitMQ
 - Authorization Server com Keycloak
 - Desenvolvimento de Imagens Docker
