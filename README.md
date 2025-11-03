@@ -1,42 +1,59 @@
-# ☁️ Curso: Microservices com Spring Cloud e Spring Boot
+# ☁️ Microservices com Spring Cloud e Spring Boot
 
-Este projeto apresenta uma **arquitetura completa de microservices** desenvolvida com **Spring Boot** e **Spring Cloud**, explorando desde o **Service Discovery** até **Gateway, mensageria, autenticação** e **deploy com Docker**.
+Este projeto faz parte da minha jornada de aprendizado e prática com **arquitetura de microservices**, utilizando **Spring Boot** e **Spring Cloud**.  
+Aqui eu exploro desde o **Service Discovery** até **Gateway**, **mensageria**, **autenticação** e **deploy com Docker**, tudo aplicado de forma prática e organizada.
+
+
+### 🌱 Spring Cloud + Spring Boot na prática  
+- Uso conjunto do **Spring Cloud** e **Spring Boot** para criar aplicações distribuídas, resilientes e prontas para escalar.
 
 ---
 
-## 🚀 Abordagens e Conceitos Principais
+### 🧩 Arquitetura completa de microservices  
+- Desenvolvimento de uma **arquitetura real**, com múltiplos serviços se comunicando de forma **síncrona e assíncrona**, cada um com sua própria responsabilidade.
 
-### 🌱 Módulos Spring Cloud / Spring Boot
-Aprenda a usar o poder do **Spring Cloud** aliado ao **Spring Boot** para construir aplicações distribuídas, escaláveis e resilientes.
+---
 
-### 🧩 Arquitetura Completa de Microservices
-Compreenda e implemente uma **arquitetura real de microservices**, com múltiplos serviços se comunicando entre si de forma síncrona e assíncrona.
+### 🔍 Service Discovery (Eureka)  
+- Configuração do **Eureka Server** para permitir o **registro automático dos serviços**, facilitando a comunicação dinâmica entre eles.
 
-### 🔍 Service Discovery
-Implemente **Service Discovery** com o **Eureka Server**, permitindo o registro e a localização automática dos microservices no ecossistema.
+---
 
-### 🚪 API Gateway
-Configure um **API Gateway** para gerenciar as requisições, autenticação e roteamento centralizado entre os microservices.
+### 🚪 API Gateway  
+- Implementação de um **API Gateway centralizado** para controle de autenticação, roteamento e segurança das requisições.
 
-### ⚖️ Balanceamento de Carga
-Implemente **load balancing** entre instâncias de microservices, garantindo **alta disponibilidade** e **distribuição eficiente de requisições**.
+---
 
-### 🛠️ Desenvolvimento de Microservices
-Crie microservices independentes e coesos, aplicando boas práticas de **desacoplamento**, **testabilidade** e **resiliência**.
+### ⚖️ Balanceamento de Carga  
+- Aplicação de **load balancing** entre instâncias de serviços para garantir **alta disponibilidade** e **melhor distribuição de requisições**.
 
-### 🔄 Comunicação Síncrona e Assíncrona
-Explore diferentes formas de comunicação entre serviços:
-- **Síncrona:** via REST usando OpenFeign  
-- **Assíncrona:** via **RabbitMQ**, aplicando o padrão **event-driven**  
+---
 
-### 📬 Serviço / Fila de Mensageria (RabbitMQ)
-Implemente mensageria para garantir **comunicação confiável e desacoplada**, usando **RabbitMQ** para troca de mensagens entre microservices.
+### 🛠️ Desenvolvimento independente  
+- Cada microservice foi criado de forma **independente e coesa**, seguindo princípios de **desacoplamento** e **boas práticas de design**.
 
-### 🔐 Authorization Server com Keycloak
-Configure o **Keycloak** como **servidor de autenticação e autorização (OAuth2 / OpenID Connect)**, centralizando o controle de acesso da aplicação.
+---
 
-### 🐳 Docker e Containers
-Aprenda a **criar imagens Docker personalizadas** dos microservices e subir containers individuais ou múltiplos para simular um ambiente real de produção.
+### 🔄 Comunicação Síncrona e Assíncrona  
+- **Síncrona:** via REST com **OpenFeign**  
+- **Assíncrona:** com **RabbitMQ**, aplicando o padrão *Event-Driven Architecture*
 
-### ⚙️ Réplicas de Microservices
-Implemente **réplicas e escalabilidade horizontal**, garantindo **tolerância a falhas** e **balanceamento automático**.
+---
+
+### 📬 Fila de Mensageria (RabbitMQ)  
+- Implementação de **mensageria confiável e desacoplada**, garantindo **comunicação robusta entre microservices**.
+
+---
+
+### 🔐 Autenticação e Autorização (Keycloak)  
+- Configuração do **Keycloak** como servidor **OAuth2/OpenID Connect**, centralizando autenticação e autorização entre serviços.
+
+---
+
+### 🐳 Docker e Containers  
+- Criação de **imagens Docker personalizadas** para os microservices, possibilitando rodar o ecossistema completo em containers.
+
+---
+
+### ⚙️ Réplicas e Escalabilidade  
+- Demonstração de **réplicas e escalabilidade horizontal**, garantindo **tolerância a falhas** e **resiliência do sistema**.
